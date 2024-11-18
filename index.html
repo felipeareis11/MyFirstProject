@@ -7,8 +7,18 @@
 </head>
 <body>
     <div class="">
-        <label for="">Nome</label>
-        <input type="text" placeholder="Digite Aqui O Seu Nome:">
-    </div>
+        <label for="">Nome:</label>
+        <input id="name" type="text" placeholder="Digite Aqui O Seu Nome">
+        <button id="btn">Click Me</button>
+    <div>
+        <p id="output-name"></p>
+    <script>
+        const nameInput = document.getElementById("input-name");
+        const btn = document.getElementById("btn");
+
+        btn.addEventListener("click", () => {
+            console.log(nameInput)
+        });
+    </script>
 </body>
 </html>
